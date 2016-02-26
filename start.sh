@@ -2,7 +2,7 @@
 APP_COUNT="${APP_COUNT}"
 
 for (( i = 1; i <= APP_COUNT; i++ )); do
-  APP_NUM="app_$i"
+  APP_NUM="app$i"
   APP_PORT_VAR="APP_PORT_$i"
   APP_DOMAIN_VAR="APP_DOMAIN_$i"
   /bin/cp /etc/nginx/conf.d/default.conf "/etc/nginx/conf.d/$APP_NUM.conf"
