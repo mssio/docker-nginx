@@ -8,8 +8,8 @@ app2:
 web:
   image: mssio/nginx
   links:
-    - app1:app_1
-    - app2:app_2
+    - app1:app1
+    - app2:app2
   environment:
     - APP_COUNT=2
     - APP_PORT_1=80
